@@ -45,16 +45,16 @@ public class UserTest {
 
    @After
    public void dropTable() {
-      testDao.drop();
+//      testDao.drop();
    }
 
    @Test
    public void add(){
 
       UserBean user = new UserBean();
-      user.setName("김남균");
-      user.setUserId("12341");
-      user.setPassword("1234");
+      user.setName("송성민");
+      user.setUserId("ssm");
+      user.setPassword("2632");
       dao.add(user);
    }
 
@@ -72,8 +72,8 @@ public class UserTest {
 
       UserBean user = new UserBean();
       user.setName("송성민");
-      user.setUserId("12345");
-      user.setPassword("1234");
+      user.setUserId("ssm");
+      user.setPassword("2632");
       dao.add(user);
 
       UserBean createdUser = dao.get(user.getUserId());
